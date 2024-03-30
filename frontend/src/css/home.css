@@ -1,21 +1,25 @@
 .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    padding: 100px;
   }
   
-  /* Carrossel de Destaques */
-  .highlight-carousel {
+  .highlight-trailers-row {
+    height: auto;
     display: flex;
     align-items: center;
+    margin: 40px 0px;
   }
-  
+
   .highlight-items {
     display: flex;
   }
   
   .highlight-item {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-color: #3498db;
     margin: 0 10px;
     transition: transform 0.3s ease;
@@ -34,5 +38,20 @@
     cursor: pointer;
     position: relative;
     z-index: 2; /* Garante que os botões fiquem acima dos divs */
+  }
+  .container-releases-posters {
+
+  }
+  
+  .row-releases-posters {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .box-releases-posters {
+    width: 130px;
+    height: 180px;
+    background-color: #2ecc71; /* verde */
+    margin: 10px 20px;
   }
   

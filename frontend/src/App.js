@@ -6,9 +6,6 @@ function App() {
   return (<>
     <Header />
     <Home />
-    <div className="App">
-      IIIaskoadspodas
-    </div>
   </>
   );
 }

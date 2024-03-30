@@ -18,8 +18,7 @@ function Home() {
     return (
         <>
       <div className="home">
-        {/* Carrossel de Destaques */}
-        <div className="highlight-carousel">
+        <div className="highlight-trailers-row">
           <button className="prev-btn" onClick={handlePrevHighlight}>&lt;</button>
           <div className="highlight-items">
             {Array.from({ length: 5 }, (_, index) => (
@@ -33,7 +32,24 @@ function Home() {
           </div>
           <button className="next-btn" onClick={handleNextHighlight}>&gt;</button>
         </div>
+        <div class="container-releases-posters">
+          <div class="row-releases-posters">
+            <div class="box-releases-posters"></div>
+            <div class="box-releases-posters"></div>
+            <div class="box-releases-posters"></div>
+            <div class="box-releases-posters"></div>
+            <div class="box-releases-posters"></div>
+          </div>
+          <div class="row-releases-posters">
+            <div class="box-releases-posters"></div>
+            <div class="box-releases-posters"></div>
+            <div class="box-releases-posters"></div>
+            <div class="box-releases-posters"></div>
+            <div class="box-releases-posters"></div>
+          </div>
+        </div>
       </div>
+      
         </>
     );
   }
