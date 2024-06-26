@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(helmet())
 app.use(cors(
     {
-        origin: ['https://movies-series-explorer-fullstack.vercel.app']
+        origin: 'https://movies-series-explorer-fullstack.vercel.app'
     }
 ));
 app.use(xss());
