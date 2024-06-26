@@ -1,0 +1,7 @@
+.container-search-result{
+    display: flex;
+    flex-wrap: wrap;
+    width: 860px;
+    margin: 0 auto;
+    margin-top: 30px;
+}

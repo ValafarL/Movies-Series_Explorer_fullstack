@@ -1,57 +1,47 @@
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .highlight-trailers-row {
-    height: auto;
-    display: flex;
-    align-items: center;
-    margin: 40px 0px;
-  }
+.main-home-container{
+  display: flex;
+  flex-direction: column;
+}
+.container-highlight{
+  font-size: 0.8vw;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.trend-img{
+  max-height: 350px;
+  width: 11vw;
+  margin-right: 1rem;
+}
+.highlight-poster-trailer{
+  width: 50%;
+  display: flex;
+}
+.highlight-details{
+  max-width: 700px;
+}
+.container-details{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
 
-  .highlight-items {
-    display: flex;
+@media (max-width: 1600px) {
+  .poster-description * p{
+      font-size: 0.8rem;
+}
+.trending-div{
+  height: 20%;
+}
+}
+@media (max-width: 1366px) {
+  .highlight-details * p{font-size: 0.7rem;}
+  .highlight-details * h4{font-size: 0.8rem;}
+  .trend-img{
+      width: 40%; 
+      height: 40%;
   }
-  
-  .highlight-item {
-    width: 200px;
-    height: 200px;
-    background-color: #3498db;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
+  .div-player{
+      width: 50%;
   }
-  
-  .highlight-item.active {
-    transform: scale(1.1);
-  }
-  
-  .prev-btn,
-  .next-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    position: relative;
-    z-index: 2; /* Garante que os botões fiquem acima dos divs */
-  }
-  .container-releases-posters {
-
-  }
-  
-  .row-releases-posters {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  .box-releases-posters {
-    width: 130px;
-    height: 180px;
-    background-color: #2ecc71; /* verde */
-    margin: 10px 20px;
-  }
-  
+}

@@ -1,0 +1,67 @@
+.card {
+  width: 150px;
+  height: 225px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: black;
+
+}
+
+.card .card-hover-details {
+  display: none;
+  flex-direction: column;
+}
+
+.card:hover .card-hover-details {
+  display: flex;
+  background-color: black;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.container-card-hover-details-buttons{
+  display: flex;
+  margin: 3px auto;
+}
+.button-icons{
+  background-color: rgb(0, 98, 255);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.button-icons:hover{
+  background-color: rgb(0, 75, 196);
+}
+.toggle-heart-blueToRed:hover{
+  background-color: rgb(255, 0, 0);
+}
+.toggle-heart-redToBLue{
+  background-color: rgb(255, 0, 0);
+}
+.toggle-heart-redToBLue:hover{
+  background-color: rgb(0, 75, 196);
+}

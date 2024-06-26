@@ -1,0 +1,36 @@
+.main-container-posters{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .posters-container {
+    width: 860px;
+    display: flex;
+    flex-wrap: wrap;  
+  }
+
+  .pages{
+    font-size: 20px;
+    margin: 15px;
+  }
+
+
+
+  /*
+  Prev btn,
+  Next btn
+  */
+  .display-btns {
+    background-color: #007bff;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .display-btns:hover {
+    background-color: rgb(0, 75, 196);
+  }

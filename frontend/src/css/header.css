@@ -1,14 +1,22 @@
-/* Estilos para o cabeçalho */
+/* containers */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 100px;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  /* Estilos para a navegação */
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+.container-header-content{
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+} 
+  /* nav links */
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -24,27 +32,33 @@ header {
     color: #fff;
     text-decoration: none;
   }
-  
-  /* Estilos para a barra de pesquisa */
-  .search-bar {
-    width: 300px;
-    padding: 0 100px;
+
+  /* search bar*/
+  .container-search{
+    display: flex;
   }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 8px;
+  .search-bar{
     border-radius: 5px;
-    border: none;
   }
-  
-  /* Estilos para o botão de login */
-  .login-btn {
-    background-color: #555;
+
+  /*
+  search btn,
+  login btn
+  */
+  .header-btns {
+    background-color: #007bff;
+    text-decoration: none;
     color: #fff;
     padding: 8px 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
-  
+  .header-btns:hover {
+    background-color: rgb(0, 75, 196);
+  }
+  .header-logged-in-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }

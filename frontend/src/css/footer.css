@@ -1,0 +1,15 @@
+footer{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 200px;
+    text-align: center;
+  }
+  
+  .tmdb-logo{
+    width: 10%;
+  }
+  .tmdb-logo-home{
+    width: 25%;
+  }
