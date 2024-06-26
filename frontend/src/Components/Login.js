@@ -14,7 +14,7 @@ export default function Login() {
   async function submitLogin(e) {
     e.preventDefault();
     try {
-      console.log(`${BACKEND_URL}/api/authentication/login`)
+      console.log(`${BACKEND_URL}/api/authentication/login`);
       const response = await axios.post(`${BACKEND_URL}/api/authentication/login`, {
         email: e.target.email.value,
         password: e.target.password.value,
