@@ -29,6 +29,7 @@ app.use(express.json());
 app.use(helmet())
 app.use(cors({
     methods: ['POST', 'GET', 'DELETE', 'PATCH'],
+    methods: ['POST', 'GET', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(xss());
