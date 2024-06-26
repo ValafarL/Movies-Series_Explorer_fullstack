@@ -27,7 +27,10 @@ app.use(rateLimiter({
 }))
 app.use(express.json());
 app.use(helmet())
-app.use(cors());
+app.use(cors({
+    origin: ['https://movies-series-explorer-fullstack.vercel.app'],
+    methods: ['POST', 'GET', 'DELETE', 'PATCH']
+}));
 app.use(xss());
 
 //routes
