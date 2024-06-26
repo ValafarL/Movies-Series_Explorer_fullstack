@@ -35,7 +35,6 @@ export default function Movies() {
       !genreQuery ? <div className='container-display-genres'>
         {
           GENRES.map((genre, key)=>{
-            console.log("query", genreQuery)
               return <>
                 <Rows type={'movie'} genre={genre}/>
               </>
