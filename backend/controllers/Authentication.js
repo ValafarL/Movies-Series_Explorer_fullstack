@@ -16,6 +16,7 @@ const register = async (req,res)=>{
     res.status(201).json({user:{name: user.name}, token})
 }
 const login = async (req, res, next)=>{
+    console.log('trying logging')
     const {email, password} = req.body
     if(!email || !password){
         throw new CustomAPIError('Please provide email and password', 401)
