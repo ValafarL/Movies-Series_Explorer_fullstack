@@ -65,9 +65,7 @@ export default function Rows({genre, type, title, data}) {
           {currentData.length > 0 &&
           currentData.slice(firstPoster, firstPoster + 5).map( (item, key) => 
                 {
-                  if(title === 'My List')console.log('item filo da puta', currentData.length)
                   if(data && item != undefined){
-                    console.log("data item ",item)
                     return <Card type={item.type} data={item} key={key}/>
                   }
                   else if (!data){
