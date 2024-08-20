@@ -2,8 +2,9 @@ import axios from "axios"
 const KEY = process.env.REACT_APP_API_KEY
 
 export const getAllMedia = async (setUserMediaList, token)=>{
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000'
     try {
-      const response = await axios.get(`http://localhost:5000/api/media`,
+      const response = await axios.get(`${BACKEND_URL}/api/media`,
       {
         headers: {
           authorization: `Bearer ${token}`
